@@ -1,5 +1,6 @@
 import React from 'react'
 import { GoogleMap, LoadScript } from '@react-google-maps/api';
+import env from 'dotenv'
 
 const containerStyle = {
   width: '1280px',
