@@ -1,3 +1,4 @@
+import Map from './Components/Map'
 import "./App.css";
 import "bootstrap/dist/css/bootstrap.css";
 import "./App.css";
@@ -21,6 +22,7 @@ function App() {
           </form>
         </div>
       </nav>
+       <Map />
     </div>
   );
 }
