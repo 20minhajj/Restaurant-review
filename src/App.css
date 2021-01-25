@@ -10,3 +10,7 @@
 .btn-pad{
     padding-right: 1em;
 }
+
+.form-block{
+    display: none;
+}
