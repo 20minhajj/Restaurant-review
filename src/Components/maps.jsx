@@ -105,6 +105,7 @@ class Maps extends Component {
       lng +
       "&radius=" +
       radius;
+      console.log(apiPlaceSearchUrl);
     let apiPlacesData = [];
     // Fetch data from Places Search API
     fetch(apiPlaceSearchUrl)
@@ -387,7 +388,7 @@ class Maps extends Component {
       />
     ));
     return (
-      <div id="app">
+      <div id="app" className="row">
         {this.state.displayForm && (
           <div className="form-control">
             <Forms
@@ -397,7 +398,7 @@ class Maps extends Component {
           </div>
         )}
 
-        <div className="map-section">
+        <div className="map-section col-md-6">
           <LoadScript googleMapsApiKey={API_KEYS}>
             <GoogleMap
               mapContainerStyle={containerStyle}
@@ -454,7 +455,7 @@ class Maps extends Component {
             <div id="restaurants-list">{restaurants}</div>
           </div>
         )} */}
-        <div id="side-panel">
+        <div id="side-panel" className="col-md-2">
           <Filters
             onChange={this.handleFiltersChange}
             minRating={this.state.minRating}
