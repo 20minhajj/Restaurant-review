@@ -1,0 +1,45 @@
+#app {
+    height: 100%;
+    display: flex;
+  }
+  
+  #side-panel {
+    width: 35%;
+    display: flex;
+    flex-direction: column;
+    overflow: scroll;
+    background-color:  #444f5a ;
+  }
+  
+  .map-section {
+    height: 100%;
+    width: 65%;
+  }
+  
+
+  
+  .form-control {
+    z-index: 2;
+    position: absolute;
+    /* text-align: center; */
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.8);
+    box-shadow: 0px 0px 70px 10px black;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .form-control h1 {
+    color: white;
+  }
+  
+  .info-window {
+    border: 5px solid grey;
+    border-radius: 5px;
+    padding: 5px;
+    background-color: #dee3e0;
+  }
+ 
