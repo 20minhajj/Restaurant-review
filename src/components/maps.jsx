@@ -388,7 +388,7 @@ class Maps extends Component {
       />
     ));
     return (
-      <div id="app" className="row">
+      <div id="app">
         {this.state.displayForm && (
           <div className="form-control">
             <Forms
@@ -398,7 +398,7 @@ class Maps extends Component {
           </div>
         )}
 
-        <div className="map-section col-md-6">
+        <div className="map-section">
           <LoadScript googleMapsApiKey={API_KEYS}>
             <GoogleMap
               mapContainerStyle={containerStyle}
@@ -437,7 +437,7 @@ class Maps extends Component {
         </div>
 
        
-        <div id="side-panel" className="col-md-2">
+        <div id="side-panel">
           <Filters
             onChange={this.handleFiltersChange}
             minRating={this.state.minRating}
