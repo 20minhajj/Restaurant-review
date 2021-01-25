@@ -1,0 +1,18 @@
+#filters form {
+    display: flex;
+    justify-content: space-around;
+}
+
+#filters select {
+    padding: 10px;
+    text-align: center;
+    margin: 10px 0;
+    background-color: rgb(83, 83, 83);
+    border: 5px solid grey;
+    border-radius: 3px;
+    margin-left: 5px;
+    color: #fff;
+}
+#filters option{
+    color: #fff;
+  }
