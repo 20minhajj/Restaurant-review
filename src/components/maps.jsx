@@ -12,8 +12,8 @@ import Restaurant from "./restaurant";
 import "./styles/map.css";
 
 // const API_KEYS= "AIzaSyDOcN1jiA7n7uaBd1h1JTTRA1dCQM1W7eU";   harith
-const API_KEYS = `AIzaSyDOcN1jiA7n7uaBd1h1JTTRA1dCQM1W7eU`;
-// const API_KEYS = "AIzaSyBe_pZIcnKoz9Lxknnj2Fm09yLm6At-7RM";
+// const API_KEYS = `AIzaSyDOcN1jiA7n7uaBd1h1JTTRA1dCQM1W7eU`;
+const API_KEYS = "AIzaSyBe_pZIcnKoz9Lxknnj2Fm09yLm6At-7RM";
 
 // Endpoint of the Place Search API
 const placesSearchApiEndpoint =
@@ -51,7 +51,7 @@ class Maps extends Component {
       restaurantsList: [],
       apiData: [],
       addRestaurant: [],
-      radius: "1000",
+      radius: "1500",
       reviewsMarkerClicked: "",
       bounds: {},
       center: {
@@ -105,7 +105,7 @@ class Maps extends Component {
       lng +
       "&radius=" +
       radius;
-      console.log(apiPlaceSearchUrl);
+      // console.log(apiPlaceSearchUrl);
     let apiPlacesData = [];
     // Fetch data from Places Search API
     fetch(apiPlaceSearchUrl)
