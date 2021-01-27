@@ -31,7 +31,7 @@ class Form extends Component {
               id="name"
               value={this.state.name}
               onChange={this.handleChange}
-              placeholder="Name"
+              placeholder="Green View Hotels"
             />
           </div>
           <div className="address">
@@ -41,13 +41,14 @@ class Form extends Component {
               id="address"
               value={this.state.address}
               onChange={this.handleChange}
-              placeholder="Address"
+              placeholder="Samora Avenue"
             />
           </div>
           <div className="comment">
             <label htmlFor="comment">Your comment:</label>
             <textarea
               name="comment"
+              placeholder="Very luxurious place"
               id="comment"
               rows="5"
               value={this.state.comment}
