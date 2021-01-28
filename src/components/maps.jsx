@@ -299,7 +299,7 @@ class Maps extends Component {
           restaurant.result.geometry.location.lat +
           "," +
           restaurant.result.geometry.location.lng;
-        // console.log(imgMetadataUrl);
+        // console.log(imgMetadataUrl.status);
         let newRestaurant = {
           name: restaurant.result.name,
           address: restaurant.result.formatted_address,
