@@ -18,19 +18,12 @@ class Restaurants extends Component {
   }
 
   componentDidMount() {
-    try {
-      fetch(this.props.restaurant.img.metadataUrl)
-        .then((response) => response.json())
-        .then(() => {
-          this.setState({
-            imgUrl: this.props.restaurant.img.url
-              ? this.props.restaurant.img.metadataUrl
-              : PIC,
-          });
-        });
-    } catch {
-      console.log("error");
-    }
+    fetch(this.props.restaurant.img.metadataUrl)
+      .then((response) => response.json())
+      .then((data) => {
+        data.status === "OK" &&
+          this.setState({ imgUrl: this.props.restaurant.img.url });
+      });
   }
 
   handleAddReviewClick() {
