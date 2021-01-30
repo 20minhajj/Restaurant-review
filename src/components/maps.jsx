@@ -352,7 +352,7 @@ class Maps extends Component {
     this.setState((prevState) => {
       return {
         addedRestaurantsByUser: updatedRestaurantsByUser,
-        showForm: !prevState.showForm,
+        displayForm: !prevState.displayForm,
       };
     });
     this.getRestaurantsList(
