@@ -367,7 +367,7 @@ class Maps extends Component {
     const restaurantsMapMakers = this.state.restaurantsList.map(
       (restaurant) => (
         <Marker
-          key={restaurant.address}
+          key={restaurant.location.lat}
           position={{
             lat: restaurant.location.lat,
             lng: restaurant.location.lng,

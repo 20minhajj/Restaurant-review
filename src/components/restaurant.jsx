@@ -27,7 +27,7 @@ class Restaurants extends Component {
         // console.log("before",this.imgUrl);
         data.status === "OK" &&
           this.setState({ imgUrl: this.props.restaurant.img.url });
-          // console.log("after",this.imgUrl);
+          console.log("after",this.imgUrl);
       });
     } catch{
       console.log("error");
