@@ -300,7 +300,7 @@ class Maps extends Component {
           restaurant.result.geometry.location.lat +
           "," +
           restaurant.result.geometry.location.lng;
-        // console.log(imgMetadataUrl.status);
+        // console.log(imgMetadataUrl);
         let newRestaurant = {
           name: restaurant.result.name,
           address: restaurant.result.formatted_address,
@@ -353,7 +353,7 @@ class Maps extends Component {
     this.setState((prevState) => {
       return {
         addedRestaurantsByUser: updatedRestaurantsByUser,
-        displayForm: !prevState.displayForm,
+        showForm: !prevState.showForm,
       };
     });
     this.getRestaurantsList(
@@ -436,7 +436,7 @@ class Maps extends Component {
           </LoadScript>
         </div>
 
-
+       
         <div id="side-panel">
           <Filters
             onChange={this.handleFiltersChange}
